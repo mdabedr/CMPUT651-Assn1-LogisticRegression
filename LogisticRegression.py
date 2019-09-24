@@ -48,7 +48,7 @@ def sigmoid(X, theta, theta0):
 
 
 # Gradient Descent Impelementation and Classification across epocs
-for epoch in range(0, 5):  # For each epoc
+for epoch in range(0, 300):  # For each epoc
     print(epoch)
     for j in range(0, 20000, 20):  # Batch gradient descent
         # Prepare minibatch
