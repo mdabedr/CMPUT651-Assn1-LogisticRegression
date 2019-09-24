@@ -58,7 +58,7 @@ for epoch in range(0, 5):  # For each epoc
         # calculate error
         error = pred - ytrain[j:j + 20]
         # calculate gradient
-        grad = Xbatch.T.dot(error)
+        grad=np.dot(np.transpose(Xbatch),error)
         # update theta values
         theta0 = theta0 - .05 * alpha * error.sum()
         theta = theta - .05 * alpha * grad
